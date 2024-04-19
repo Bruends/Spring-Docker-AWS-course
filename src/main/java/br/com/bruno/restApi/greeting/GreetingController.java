@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicLong;
 
 @RestController
 public class GreetingController {
-    private String template = "Hello, %s";
+    private final String template = "Hello, %s";
     private final AtomicLong counter = new AtomicLong();
 
     @GetMapping("/greeting")
